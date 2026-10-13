@@ -1,0 +1,10 @@
+{
+  "description": "Enhance your website's visual appeal with a solid color background that reveals a subtle weave pattern on hover, perfect for stylish and engaging user experiences.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@atomic-finds/weave-reveal-handoff",
+  "version": "2.3.0",
+  "private": true,
+  "description": "Source handoff for the Atomic Finds ATX fluid weave reveal",
+  "files": [
+    "components/WeaveReveal.tsx",
+    "public/weave-pattern.svg",
+    "styles/weave-reveal.css",
+    "README.md",
+    "QA.md"
+  ],
+  "peerDependencies": {
+    "react": ">=18"
+  }
+}

@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Arial, sans-serif;
+  color: #203c34;
+  background: #faf6ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: #faf6ee;
+}
+
+button {
+  border: 1px solid #3a5e52;
+  padding: 12px 18px;
+  background: #faf6ee;
+  color: #3a5e52;
+  font: inherit;
+  cursor: pointer;
+}
+
+.demo {
+  min-height: 100vh;
+}
+
+.demo__surface {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.demo__content {
+  display: grid;
+  min-height: 100vh;
+  padding: 48px;
+  place-content: center;
+  justify-items: start;
+}
+
+.demo__label {
+  margin: 0 0 18px;
+  color: #c25b22;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.demo h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(56px, 10vw, 112px);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+}
+
+.demo__content > p:not(.demo__label) {
+  max-width: 480px;
+  margin: 24px 0;
+  color: #5f6e67;
+  line-height: 1.6;
+}
+
+.weave-reveal {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #faf6ee;
+}
+
+.weave-reveal__canvas {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.weave-reveal__content {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .demo__content {
+    padding: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .weave-reveal__canvas {
+    display: none;
+  }
+}
