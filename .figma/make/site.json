@@ -1,10 +1,18 @@
 {
+  "title": "Atomic Finds ATX",
   "description": "Enhance your website's visual appeal with a solid color background that reveals a subtle weave pattern on hover, perfect for stylish and engaging user experiences.",
+  "language": "EN",
   "robots": {
     "index": false
   },
+  "icons": {
+    "icon": "/.figma/make/favicon.png"
+  },
+  "openGraph": {
+    "image": "/.figma/make/social-image.png"
+  },
   "accessibility": {
     "addBypassLinks": false,
-    "ignoreReducedMotion": false
+    "ignoreReducedMotion": true
   }
 }
